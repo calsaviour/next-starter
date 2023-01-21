@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { cn } from "utils/tailwind";
+import Layout from "@/components/layout/layout";
 import Background from "@/components/shared/background";
 import LoadingDots from "@/components/shared/icons/loadingDots";
 
@@ -40,7 +41,7 @@ export default function Login() {
 
   return (
     <>
-      <div className={cn("flex h-screen w-screen items-center justify-center")}>
+      <div className={cn("flex h-[80%] w-screen items-center justify-center")}>
         <Background />
         <div
           className={cn(

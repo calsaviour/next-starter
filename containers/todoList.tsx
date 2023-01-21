@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import LoadingDots from "@/components/shared/icons/loadingDots";
 import { NoTodos } from "@/components/todoItem";
 import TodoListRoot from "@/components/todoList";
 import { TODOPATH } from "@/lib/constants";
@@ -15,7 +16,7 @@ const TodoList: React.FC = () => {
   });
 
   if (error != null) return <div>{error?.info?.message}</div>;
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <LoadingDots />;
 
   if (todos.length === 0) {
     return <NoTodos />;

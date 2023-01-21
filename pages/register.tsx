@@ -41,7 +41,7 @@ export default function Login() {
 
   return (
     <>
-      <div className={cn("flex h-screen w-screen items-center justify-center")}>
+      <div className={cn("flex h-[80%] w-screen items-center justify-center")}>
         <Background />
         <div
           className={cn(

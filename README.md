@@ -1,53 +1,35 @@
----
-title: NextJS Prisma
-description: A NextJS app using Prisma with a PostgreSQL database
-tags:
-  - next
-  - prisma
-  - postgresql
-  - typescript
----
+<div align="center" >
+  <h1 
+    align="center"
+    style="text-decoration:underline;text-decoration-style:dashed"
+  >TodoX</h1>
+  <a href="https://github.com/trpc/trpc/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/github/license/trpc/trpc" />
+  </a>
+  <a href="https://twitter.com/lohxt">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url.svg?label=%40lohxt&style=social&url=https%3A%2F%2Ftwitter.com%2Flohxt" />
+  </a>
+  <br />
+  <br />
+</div>
 
-# NextJS Prisma Example
+<p align="center" style="font-weight:400;font-size:20px;">
+  An minimal authenticated todo app. Can be used as a starter template to build things upon.
+</p>
 
-This example is a [NextJS](https://nextjs.org/) todo app that uses
-[Prisma](https://www.prisma.io/) to store todos in Postgres.
+## Tech Stack
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/HRZqTF)
+- **[Next.js](https://nextjs.org/) – framework**
+- **[Typescript](https://www.typescriptlang.org/) – language**
+- **[Tailwind](https://tailwindcss.com/) – CSS**
+- **[PostgreSQL](https://railway.app/) – database**
+- **[NextAuth.js](https://next-auth.js.org/) – auth**
+- **[Vercel](https://vercel.com/) – hosting**
 
-## ✨ Features
+## Implementation
 
-- Prisma
-- NextJS
-- Postgres
-- TypeScript
+**TodoX** is built as a standard Next.js application with a customizable **[Middleware](https://nextjs.org/docs/advanced-features/middleware)**
 
-## 💁‍♀️ How to use
+**Optimistic UI** achieved by the **[SWR](https://github.com/vercel/swr)** _react hook_ for _data fetching_
 
-- [Provision a Postgres container on Railway](https://dev.new)
-- Connect to your Railway project with `railway link`
-- Migrate the database `railway run yarn migrate:dev`
-- Run the NextJS app `railway run yarn dev`
-
-## 📝 Notes
-
-This app is a simple todo list where the data is persisted to Postgres. [Prisma
-migrations](https://www.prisma.io/docs/concepts/components/prisma-migrate#prisma-migrate)
-can be created with `railway run yarn migrate:dev` and deployed with `railway run yarn migrate:deploy`. The Prisma client can be regenerated with
-`yarn generate`.
-
-[swr](https://swr.vercel.app/) is used to fetch data on the client and perform optimistic updates.
-
-
-## Prisma steps
-
-prisma schema (/prisma/schema.prisma) exists?
-  modify the schema if required
-  - npx prisma db push
-else
-  - npx prisma init
-  modify the schema if required
-  - npx prisma dp push
-
-For prisma gui
-  - npx prisma studio
+**[PostgreSQL](https://www.railway.app/)** is used as the database for storing user data and todos. You can refer to the _Prisma schema_ **[here](/prisma/schema.prisma)**.
