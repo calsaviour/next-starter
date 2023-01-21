@@ -37,3 +37,17 @@ can be created with `railway run yarn migrate:dev` and deployed with `railway ru
 `yarn generate`.
 
 [swr](https://swr.vercel.app/) is used to fetch data on the client and perform optimistic updates.
+
+
+## Prisma steps
+
+prisma schema (/prisma/schema.prisma) exists?
+  modify the schema if required
+  - npx prisma db push
+else
+  - npx prisma init
+  modify the schema if required
+  - npx prisma dp push
+
+For prisma gui
+  - npx prisma studio
