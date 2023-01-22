@@ -16,18 +16,8 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
-  todos         Todo[]
   accounts      Account[]
   sessions      Session[]
-}
-
-model Todo {
-  id        String   @id @default(uuid())
-  createdAt DateTime @default(now())
-  text      String
-  userId    String?
-  user      User?   @relation(fields: [userId], references: [id])
-  completed Boolean
 }
 
 model Account {

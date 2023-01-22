@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { cn } from "utils/tailwind";
-import Layout from "@/components/layout/layout";
 import Background from "@/components/shared/background";
 import LoadingDots from "@/components/shared/icons/loadingDots";
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { cn } from "@/utils/tailwind";
 
 const Main = ({ children }: { children: React.ReactNode }) => {

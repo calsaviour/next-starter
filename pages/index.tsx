@@ -8,7 +8,7 @@ const Home: NextPage = () => {
         "flex h-[80%] w-screen items-center justify-center align-middle",
       )}
     >
-      <label className={cn("text-9xl font-black")}>Todos</label>
+      <label className={cn("text-9xl font-black")}>Open 🔓</label>
     </div>
   );
 };

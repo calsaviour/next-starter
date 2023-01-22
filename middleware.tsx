@@ -1,14 +1,5 @@
-import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
-import { HOME_HOSTNAMES } from "@/lib/constants";
-// import {
-//   DEFAULT_REDIRECTS,
-//   HOME_HOSTNAMES,
-//   RESERVED_KEYS,
-// } from "@/lib/constants";
-import {
-  ApiMiddleware, //   RootMiddleware,
-  AppMiddleware,
-} from "@/lib/middleware";
+import { NextFetchEvent, NextRequest } from "next/server";
+import { ApiMiddleware, AppMiddleware } from "@/lib/middleware";
 import { parse } from "@/lib/middleware/utils";
 
 export const config = {
@@ -26,8 +17,7 @@ export const config = {
 };
 
 export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
-  const { domain, path, key } = parse(req);
-  const home = HOME_HOSTNAMES.has(domain);
+  const { key } = parse(req);
 
   if (key == "api") {
     return ApiMiddleware(req);

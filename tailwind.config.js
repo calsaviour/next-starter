@@ -18,6 +18,11 @@ module.exports = {
       width: {
         128: "32rem", // following the standard of 128 / 4 = 32
       },
+      minWidth: {
+        '1/2': '50%',
+        '1/3': '33.333333%',
+        '1/4': '25%'
+      }
     },
   },
   plugins: [],

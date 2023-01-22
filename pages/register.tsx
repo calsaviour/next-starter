@@ -24,7 +24,7 @@ export default function Login() {
       const res = await signIn("email", {
         email,
         redirect: false,
-        callbackUrl: "/welcome",
+        // callbackUrl: "/welcome",
       });
       setSignInClicked(false);
       if (res?.ok && !res?.error) {

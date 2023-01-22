@@ -10,8 +10,6 @@ const HeaderIsland: React.FC = () => {
 
   const [darkMode, toggleDarkMode] = useState(true);
 
-  console.log(status);
-
   const _handleClick = (e) => {
     e.preventDefault();
     if (session?.user?.email) {
@@ -36,7 +34,7 @@ const HeaderIsland: React.FC = () => {
     >
       <div
         className={cn(
-          "flex h-14 w-fit items-center justify-between align-middle md:w-1/3 lg:w-1/4",
+          "flex h-14 w-fit items-center justify-between align-middle md:min-w-[1/3] lg:min-w-[1/4]",
           // "md:w-1/2",
           "rounded-full border border-slate-900",
           "px-5",
