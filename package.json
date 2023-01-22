@@ -1,5 +1,5 @@
 {
-  "name": "with-nextjs-prisma",
+  "name": "next-magic-link-auth",
   "version": "0.1.0",
   "private": true,
   "scripts": {
