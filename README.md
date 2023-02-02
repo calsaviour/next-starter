@@ -15,11 +15,11 @@ NextJS Starter Template with Passwordless Auth
 </p>
 </div>
 
-### About The Project
+## About The Project
 
 "pullTweets" is a user-friendly NextJS application that allows individuals to effortlessly search and retrieve tweets from any public Twitter account. The app facilitates exploring, examining tweet statistics, patterns and also offers the option to save the tweets for offline access.
 
-### Tech Stack
+## Tech Stack
 
 - [Next.js](https://nextjs.org/) – `framework`
 - [Typescript](https://www.typescriptlang.org/) – `language`
@@ -29,7 +29,7 @@ NextJS Starter Template with Passwordless Auth
 - [NextAuth.js](https://next-auth.js.org/) – `auth`
 - [Vercel](https://vercel.com/) – `hosting`
 
-### Running the code `locally`
+## Running the code `locally`
 
 To run the code locally, open _Terminal_ in your `projects` folder and take the steps:
 
