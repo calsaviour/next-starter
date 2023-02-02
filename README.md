@@ -29,7 +29,7 @@ NextJS Starter Template with Passwordless Auth
 - [NextAuth.js](https://next-auth.js.org/) – `auth`
 - [Vercel](https://vercel.com/) – `hosting`
 
-## Running the code `locally`
+## Running the code locally
 
 To run the code locally, open _Terminal_ in your `projects` folder and take the steps:
 
